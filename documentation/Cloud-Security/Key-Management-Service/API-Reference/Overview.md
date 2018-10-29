@@ -8,12 +8,12 @@ KMS秘钥管理服务是以RESTful API的形式对外提供服务，当访问不
 
 各个Region对应的Endpoint如下表：
 
-|区域|Endpoint|
-| - | - |
-|华北北京|kms.cn-north-1.jdcloud-api.com
-|华东上海|kms.cn-east-2.jdcloud-api.com
-|华东宿迁|kms.cn-east-1.jdcloud-api.com
-|华南广州|kms.cn-south-1.jdcloud-api.com
+|区域|公网Endpoint|内网|
+| - | - | - |
+|华北北京|kms.cn-north-1.jdcloud-api.com|kms.internal.cn-north-1.jdcloud-api.com
+|华东上海|kms.cn-east-2.jdcloud-api.com|kms.internal.cn-east-2.jdcloud-api.com
+|华东宿迁|kms.cn-east-1.jdcloud-api.com|kms.internal.cn-east-1.jdcloud-api.com
+|华南广州|kms.cn-south-1.jdcloud-api.com|kms.internal.cn-south-1.jdcloud-api.com
 
 **请求方法**
 
@@ -72,34 +72,25 @@ https :// {Endpoint} / {resource-path} ? {query-string}
 使用密钥对数据进行加密：
 
 使用curl的请求方式：
-
-Curl https://kms.jdcloud-api.com/v1/key/{keyId}:Encrypt 
-
-  -H"x-jdcloud-request-id: xxx"   \
-  
+```
+curl https://kms.jdcloud-api.com/v1/key/{keyId}:Encrypt 
+  -H"x-jdcloud-request-id: xxx"   \ 
   -H"x-jdcloud-pin: pin"                     \
-  
   -H"x-jdcloud-request-ip: 8.8.8.8"           \
-
-  -d "{
-      
+  -d "{   
    "Plaintext: plaintext"
-
 }"
+```
 
 返回结果：
-
+```
 {
-
-  "result": {
-    
+  "result": { 
    "ciphertextBlob": "PO22vGWl0WgjsZ8VjChglcnLo+1G1HaCikWIRSRtcEPDSdlRivzYg0qdGlwIXXXX"
-  
   },
-  
   "requestId": "xxx"
-
 }
+```
 
 
 
