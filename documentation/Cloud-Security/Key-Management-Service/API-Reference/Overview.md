@@ -8,7 +8,7 @@ KMS秘钥管理服务是以RESTful API的形式对外提供服务，当访问不
 
 各个Region对应的Endpoint如下表：
 
-|区域|公网Endpoint|内网|
+|区域|公网Endpoint|内网Endpoint|
 | - | - | - |
 |华北北京|kms.cn-north-1.jdcloud-api.com|kms.internal.cn-north-1.jdcloud-api.com
 |华东上海|kms.cn-east-2.jdcloud-api.com|kms.internal.cn-east-2.jdcloud-api.com
