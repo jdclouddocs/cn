@@ -15,7 +15,7 @@
  ![创建资源栈](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/resource001.png)
  
 2. 选择模板类型，“示例模板”或者“我的模板”，“示例模板”是京东云官方提供的标准化的资源交付方式的参考文本文件，入门指南用“示例模板”举例演示。
-选择模板源，“vpc_subnet_(vpc_subnet)”，模板内容自动生产，点击“下一步”。
+选择模板源，“vpc_subnet”，模板内容自动生产，点击“下一步”。
 
 ![创建资源栈-选择模板](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/resource002.png)
 
