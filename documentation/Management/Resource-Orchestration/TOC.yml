@@ -13,8 +13,14 @@ items:
       href: Introduction/Features.md
     - name: 限制说明
       href: Introduction/Restrictions.md
-    - name: 应用场景 
-      href: Introduction/Application-Scenarios.md    
+   - name: 应用场景 
+      items:
+        - name: 跨区域的模板复用
+          href: Introduction/Cross-regional-replication .md
+        - name: 快速复制多套环境
+          href: Introduction/Fast-Clone.md
+        - name: 应用一键上云
+          href: Introduction/Application-Cloud.md 
 - name: 产品定价
   items:
     - name: 计费概述
@@ -22,7 +28,7 @@ items:
 - name: 入门指南
   items:
     - name: 入门指导
-      href: Getting-Started/KMS-Started.md
+      href: Getting-Started/jdro-start.md
 - name: 操作指南
   items:
        - name: 资源栈管理
