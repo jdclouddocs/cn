@@ -31,6 +31,21 @@ items:
       href: Getting-Started/jdro-start.md
 - name: 操作指南
   items:
+        - name: 编排模板
+      items:
+        - name: 编排模板结构说明
+          href: Operation-Guide/orchestration-templates/templates-structure.md
+        - name: 编排模板基本语法说明-参数（Parameters）
+          href: Operation-Guide/orchestration-templates/templates-grammar-Parameters.md
+        - name: 编排模板基本语法说明-参数（Mappings）
+          href: Operation-Guide/orchestration-templates/templates-grammar-Mappings.md
+        - name: 编排模板基本语法说明-参数（Conditions）
+          href: Operation-Guide/orchestration-templates/templates-grammar-Conditions.md
+        - name: 编排模板基本语法说明-参数（Resources）
+          href: Operation-Guide/orchestration-templates/templates-grammar-Resources.md
+        - name: 编排模板基本语法说明-参数（Outputs）
+          href: Operation-Guide/orchestration-templates/templates-grammar-Outputs.md
+       
        - name: 资源栈管理
       items:
         - name: 概述
@@ -43,16 +58,11 @@ items:
           href: Operation-Guide/Resource-Stack/update-stack.md 
         - name: 删除资源栈
           href: Operation-Guide/Resource-Stack/delete-stack.md
-       
-        
-      - name: 编排模板
+         
+         - name: 资源类型
       items:
-        - name: 编排模板结构说明
-          href: Operation-Guide/orchestration-templates/templates-structure.md
-        - name: 编排模板基本语法说明-参数（Parameters）
-          href: Operation-Guide/orchestration-templates/templates-grammar-Parameters.md
-        - name: 对资源设置监控报警
-          href: Operation-Guide/resource-monitoring/set-alarm-rules-details.md
+        - name: 资源类型说明
+          href: Operation-Guide/resource-type.md
 - name: 常见问题
   items:
     href: FAQ/FAQ.md
