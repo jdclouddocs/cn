@@ -27,7 +27,7 @@ items:
       href: Pricing/Billing-Overview.md
 - name: 入门指南
   items:
-    - name: 入门指导
+    - name: 入门指南概述
       href: Getting-Started/jdro-start.md
 - name: 操作指南
   items:
@@ -57,17 +57,45 @@ items:
         - name: 更新资源栈
           href: Operation-Guide/Resource-Stack/update-stack.md 
         - name: 删除资源栈
-          href: Operation-Guide/Resource-Stack/delete-stack.md
-         
-         - name: 资源类型
+          href: Operation-Guide/Resource-Stack/delete-stack.md       
+       - name: 资源类型
       items:
-        - name: 资源类型说明
-          href: Operation-Guide/resource-type.md
-- name: 常见问题
+         - name: 资源类型说明
+          href: Operation-Guide/resource-type.md      
+  - name: 最佳实践
+  items:
+    - name: 创建一个私有网络和子网
+      href: Best-Practices/1_vpc_subnet_(vpc_subnet).md
+    - name: 创建一个私有网络，在该网络环境下创建一台云主机并额外挂载一块存储硬盘
+      href: Best-Practices/2_vm_vpc_instance_(vpc_subnet_instance_disk).md
+    - name: 创建一个私有网路，在网络环境下创建数据库示例
+      href: Best-Practices/3_rds_instance_(vpc_subnet_rds).md
+    - name: 创建一个单节点WordPress应用
+      href: Best-Practices/4_wordpress_with_single_(vpc_s4_ubnet_instance_ip_rds).md
+    - name: 创建一个集群模式的WordPress应用
+      href: Best-Practices/5_wordpress_with_cluster_(vpc_subnet_instance_disk_ip_rds_lb).md
+    - name: 创建一个Java Web开发测试环境
+      href: Best-Practices/6_Java_web_instance_(vpc_subnet_instance_disk_ip_rds).md
+  - name: 教程
+  items:
+  status: 0
+  - name: 问题排查
+  items:
+     - name: 配置类问题
+       href: Troubleshooting/Configuration-problem.md
+     - name: 故障类问题
+       href: Troubleshooting/Fault-problem .md
+  - name: 常见问题
   items:
     href: FAQ/FAQ.md
-- name: API参考
- items:
+  - name: API参考
+  items:
     - name: API使用说明
       href: API-Reference/Overview.md
   status: 0
+  - name:相关资源
+  items:
+    - name: 文档历史记录
+      href: Related-Resources/Document-history.md
+    - name: 词汇表
+      href: Related-Resources/ vocabulary .md 
