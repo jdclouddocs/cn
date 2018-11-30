@@ -53,6 +53,9 @@ items:
           href: Operation-Guide/orchestration-templates/templates-grammar-Parameters.md
         - name: 对资源设置监控报警
           href: Operation-Guide/resource-monitoring/set-alarm-rules-details.md
+- name: 常见问题
+  items:
+    href: FAQ/FAQ.md
 - name: API参考
  items:
     - name: API使用说明
