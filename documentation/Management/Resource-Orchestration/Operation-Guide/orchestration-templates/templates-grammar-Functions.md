@@ -405,10 +405,42 @@ true 或 false。
 
 ### 示例
 ```
+{
+    "JDCLOUDTemplateFormatVersion": "2018-10-01",
+    "Parameters":{
+        "EnvType":{
+          "Default":"pre",
+          "Type":"String"
+        }
+      },
+    "Conditions": {
+        "IsPre": {"Fn::Equals": ["pre", {"Ref": "EnvType"}]}
+      },
+    "Resources": {
+        "MyInstance": {
+            "Type": "JDCLOUD::VM::Instance",
+            "Properties": {
+                "AZ": {
+                    "Fn::FindInMap": [
+                        "AZInfo",
+                        {
+                            "Ref": "JDCLOUD::Region"
+                        },
+                        "az1"
+                    ]
+                },
+                "ImageId":{
+                    "Fn::If":[
+                        "IsPre",
+                        "PreImageID",
+                        "notPreImageID"
+                    ]
+                }
+            }
+        }
+    }
+}
 ```
-
-
----
 
 ## Fn::Not
 代表 NOT 运算符。对计算为 false 的条件，返回 true；对计算为 true 的条件，返回 false。
