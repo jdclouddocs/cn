@@ -11,7 +11,7 @@
 
 ![](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/delete%20stack002.png)
 
-注意：删除资源栈会同时删除未定义删除保留的资源。
+
 ## 注意事项
 
 - 删除资源栈会同时删除资源栈下的资源，若想保留栈中的部分资源请在模板中自行定义删除策略。
