@@ -173,7 +173,7 @@ Resources 由资源逻辑 ID 和资源描述组成。请参见以下 Resources �
 
 #### 删除策略（DeletionPolicy）
 
-在模板中，设置 DeletionPolicy 属性，可以声明在资源栈被删除时保留某个资源。可选值为Delete（删除）、Retain（保留）、Snapshot（快照）。
+在模板中，设置 DeletionPolicy 属性，可以声明在资源栈被删除时保留某个资源。可选值为Delete（删除）、Retain（保留）。
 
 例如，设置在资源栈删除时，保留 vm 实例。可按照如下代码段进行声明：
 
