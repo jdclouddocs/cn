@@ -1,7 +1,5 @@
 # 删除资源栈
-## 前提条件
 
-- 用户希望永久删除资源栈，资源栈中的资源一经删除无法恢复。
 
 ## 操作步骤：
 
@@ -14,3 +12,27 @@
 ![](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/delete%20stack002.png)
 
 注意：删除资源栈会同时删除未定义删除保留的资源。
+## 注意事项
+
+- 删除资源栈会同时删除资源栈下的资源，若想保留栈中的部分资源请在模板中自行定义删除策略。
+  
+  相关内容参见 编排模板基本语法说明-资源（Resources）- 删除策略（DeletionPolicy）
+  
+  
+  删除策略（DeletionPolicy）
+
+  在模板中，设置 DeletionPolicy 属性，可以声明在资源栈被删除时保留某个资源。可选值为Delete（删除）、Retain（保留）、Snapshot（快照）。
+
+  例如，设置在资源栈删除时，保留 vm 实例。可按照如下代码段进行声明：
+     
+     ```
+      "Resources" : {
+        "MyInstance" : {
+          "Type" : "JDCLOUD::VM::Instance",
+          "Properties" : {
+            "ImageId" : "img-wcewkxc5c1"
+          },
+          "DeletionPolicy" : "Retain"
+        }
+      }
+      ```
