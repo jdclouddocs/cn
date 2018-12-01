@@ -14,7 +14,7 @@
 
 操作：提供“管理”、“更新”和“删除”操作按钮
 
-![1540178425297](C:\Users\CHENSH~1\AppData\Local\Temp\1540178425297.png)
+![1540178425297](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/view%20stack%20001.png)
 
 ### 资源栈详情
 
@@ -22,4 +22,4 @@
 
 2. 在资源栈详情中，我们可以查看资源栈的概况、资源、事件和模板。
 
-   ![1540179115664](C:\Users\CHENSH~1\AppData\Local\Temp\1540179115664.png)
+   ![1540179115664](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/view%20stack%20002.png)
