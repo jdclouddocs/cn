@@ -57,15 +57,7 @@
         "MyInstance": {
             "Type": "JDCLOUD::VM::Instance",
             "Properties": {
-                "AZ": {
-                    "Fn::FindInMap": [
-                        "AZInfo",
-                        {
-                            "Ref": "JDCLOUD::Region"
-                        },
-                        "az1"
-                    ]
-                }
+                "AZ": { "Fn::FindInMap": [ "AZInfo", { "Ref": "JDCLOUD::Region" }, "az1"]},
             }
         }
     }
