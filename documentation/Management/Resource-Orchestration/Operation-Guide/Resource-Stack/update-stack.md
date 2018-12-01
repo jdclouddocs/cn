@@ -1,7 +1,9 @@
 # 更新资源栈
 
 1）资源栈信息展示当前资源栈设置的内容；
+![](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/update001.png)
 
 2）若不更新模板内容，仅需更新一些自定义参数，则直接点击下一步，进入到“配置信息”页面，更改相关参数信息，点击下一步，审核更改的信息，确认无误后点击“更新资源栈”即可。
-
+![](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/update002.png)
 3）若需更新模板，在“选择模板”页中模板内容进行更改，点击“下一步”，进入到“配置信息”页，若有需要配置的自定义参数，设置相关参数信息，点击下一步，审核更改的信息，确认无误后，点击“更新资源栈”
+![](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/update003.png)
