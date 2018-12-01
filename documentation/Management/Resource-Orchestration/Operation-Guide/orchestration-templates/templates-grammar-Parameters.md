@@ -60,7 +60,7 @@
 
 |属性|必须|描述|
 |:--|:--|:--|
-|Type|是|参数的数据类型。<br>JDRO目前支持以下参数类型：<br><br>**1）String**<br>字符串。如："ecs.s1.medium"。<br><br>**2）Number**<br>整数或浮点数。如：3.14。<br><br>**3）CommaDelimitedList**<br>一组用逗号分隔的字符串或数字，可通过 Fn::Select 函数索引值。如："80, foo, bar"。<br><br>**4）List\<Number\>**<br>一组用逗号分隔的整数或浮点数。JDRO 将参数值验证为数字，但当您在模板中的其他位置使用该参数时（例如，通过使用 Ref 内部函数），该参数值将变成字符串列表。例如，用户可指定 "80,20"，并且 Ref 将生成 ["80","20"]。<br><br>**5）Boolean**<br>一个布尔值。如：true 或者 false。<br><br>**6）JDRO特定的参数类型**<br>JDRO 的特殊值，例如 vm 镜像。有关更多信息，请参阅 [JDRO 特定的参数类型](#JDROsptype)。|
+|Type|是|参数的数据类型。<br>JDRO目前支持以下参数类型：<br><br>**1）String**<br>字符串。如："g.n2.medium"。<br><br>**2）Number**<br>整数或浮点数。如：3.14。<br><br>**3）CommaDelimitedList**<br>一组用逗号分隔的字符串或数字，可通过 Fn::Select 函数索引值。如："80, foo, bar"。<br><br>**4）List\<Number\>**<br>一组用逗号分隔的整数或浮点数。JDRO 将参数值验证为数字，但当您在模板中的其他位置使用该参数时（例如，通过使用 Ref 内部函数），该参数值将变成字符串列表。例如，用户可指定 "80,20"，并且 Ref 将生成 ["80","20"]。<br><br>**5）Boolean**<br>一个布尔值。如：true 或者 false。<br><br>**6）JDRO特定的参数类型**<br>JDRO 的特殊值，例如 vm 镜像。有关更多信息，请参阅 [JDRO 特定的参数类型](#JDROsptype)。|
 |Default|否|在创建资源栈时，如果用户没有传入指定值，资源编排服务会检查模板中是否有定义默认值。如果有定义默认值，则使用默认值，否则报错。|
 |NoEcho|否|当调用查询资源栈时，是否输出参数值。如果将值设置为 true，则只输出星号 (******)。|
 |AllowedValues|否|包含参数允许值的列表。|
