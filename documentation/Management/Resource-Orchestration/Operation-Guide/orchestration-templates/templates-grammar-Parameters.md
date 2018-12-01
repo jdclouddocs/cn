@@ -24,7 +24,7 @@
 
 ### 在模板中引用参数
 
-您使用 Ref 内部函数来引用某个参数，使用该参数的值来预置堆栈。您在模板的 Resources 和 Outputs 部分中引用该参数。
+您使用 Ref 内部函数来引用某个参数，使用该参数的值来预置资源栈。您在模板的 Resources 和 Outputs 部分中引用该参数。
 
 在以下示例中，vm实例资源的 InstanceType 属性引用了 InstanceTypeParameter 参数值：
 
