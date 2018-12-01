@@ -65,17 +65,17 @@ items:
   - name: 最佳实践
   items:
     - name: 创建一个私有网络和子网
-      href: Best-Practices/1_vpc_subnet.md
+      href: Best-Practices/vpc_subnet.md
     - name: 创建一个私有网络，在该网络环境下创建一台云主机并额外挂载一块存储硬盘
-      href: Best-Practices/2_vm_vpc_instance.md
+      href: Best-Practices/vm_vpc_instance.md
     - name: 创建一个私有网路，在网络环境下创建数据库示例
-      href: Best-Practices/3_rds_instance.md
+      href: Best-Practices/rds_instance.md
     - name: 创建一个单节点WordPress应用
-      href: Best-Practices/4_wordpress_with_single.md
+      href: Best-Practices/wordpress_with_single.md
     - name: 创建一个集群模式的WordPress应用
-      href: Best-Practices/5_wordpress_with_cluster.md
+      href: Best-Practices/wordpress_with_cluster.md
     - name: 创建一个Java Web开发测试环境
-      href: Best-Practices/6_Java_web_instance.md
+      href: Best-Practices/Java_web_instance.md
   - name: 教程
   items:
   status: 0
