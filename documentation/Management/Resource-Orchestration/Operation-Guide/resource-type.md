@@ -13,7 +13,7 @@
  |JDCLOUD::VM::AttachDisk| 将已有硬盘挂载到运行中的实例 | 
  |JDCLOUD::VPC::VPC| 创建VPC |
  |JDCLOUD::VPC::Subnet| 在VPC中创建子网 | 
- |JDCLOUD::VPC::EIP |
+ |JDCLOUD::VPC::EIP | 分配一个公网IP
  |JDCLOUD::VPC::AssociateEIP| 负载均衡。本期支持云主机和负载均衡。
  |JDCLOUD::LB::LoadBalancer| 创建负载均衡 |
  |JDCLOUD::LB::Listener| 创建监听 |
