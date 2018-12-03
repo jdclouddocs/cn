@@ -4,13 +4,26 @@
 
 　　该模版通过弹性云主机的userdata功能支持，将WordPress安装部署脚本同步下发到弹性云主机，在主机创建完成后，自动去下载安装WordPress，并且启动WordPress服务。
 
-　　为了监测WordPress的安装部署脚本执行结果，我们在模版中添加了两个虚拟资源， 类型分别为：“JDCLOUD::ResourceOrchestration::WaitCondition” 和 “JDCLOUD::ResourceOrchestration::WaitConditionHandle”。关于这两种资源类型的详细介绍，请参考JDRO资源类型介绍页面。
+　　为了监测WordPress的安装部署脚本执行结果，我们在模版中添加了两个虚拟资源， 类型分别为：“JDCLOUD::ResourceOrchestration::WaitCondition” 和 “JDCLOUD::ResourceOrchestration::WaitConditionHandle”。关于这两种资源类型的详细介绍，请参考资源编排资源类型介绍页面。
 
-　　在弹性云主机的userdata执行脚本中，我们建议用户首先通过JDRO指定的对象存储地址，下载JDRO提供的发送消息脚本。在WordPress安装完成后，调用该发送消息脚本反馈给JDRO服务端，详见该实例模版。
+　　在弹性云主机的userdata执行脚本中，我们建议用户首先通过资源编排服务指定的对象存储地址，下载资源编排服务提供的发送消息脚本。在WordPress安装完成后，调用该发送消息脚本反馈给资源编排服务端，详见该实例模版。
 
-　　JDRO服务端收到部署成功的信号后，才会完成整个资源栈的创建。如果JDRO服务端收到部署失败的信号，则会认为资源栈创建失败，会进行回滚操作，删除已创建好的所有资源。
+　　资源编排服务端收到部署成功的信号后，才会完成整个资源栈的创建。如果资源编排服务端收到部署失败的信号，则会认为资源栈创建失败，会进行回滚操作，删除已创建好的所有资源。
 
-　　创建成功的资源栈，输出WordPress弹性公网IP。
+　　创建成功的资源栈，输出WordPress弹性公网IP。  
+ `注`：资源编排服发送消息脚本指定的下载地址为：  
+- 华北-北京  
+Linux主机： jdro-userdata-cn-north-1.oss.cn-north-1.jcloudcs.com/signal.py  
+Windows主机: jdro-userdata-cn-north-1.oss.cn-north-1.jcloudcs.com/signal.exe
+- 华南-广州    
+Linux主机： jdro-userdata-cn-south-1.oss.cn-south-1.jcloudcs.com/signal.py  
+Windows主机: jdro-userdata-cn-south-1.oss.cn-south-1.jcloudcs.com/signal.exe  
+- 华东-上海   
+Linux主机： jdro-userdata-cn-east-2.oss.cn-east-2.jcloudcs.com/signal.py  
+Windows主机： jdro-userdata-cn-east-2.oss.cn-east-2.jcloudcs.com/signal.exe  
+- 华东-宿迁  
+Linux主机： jdro-userdata-cn-east-1.oss.cn-east-1.jcloudcs.com/signal.py  
+Windows主机： jdro-userdata-cn-east-1.oss.cn-east-1.jcloudcs.com/signal.exe  
 
 ----------
 ## 编排模板说明:
