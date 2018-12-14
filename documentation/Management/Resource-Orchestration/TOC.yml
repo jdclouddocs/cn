@@ -37,13 +37,17 @@ items:
           href: Operation-Guide/orchestration-templates/templates-structure.md
         - name: 编排模板基本语法说明-参数（Parameters）
           href: Operation-Guide/orchestration-templates/templates-grammar-Parameters.md
-        - name: 编排模板基本语法说明-参数（Mappings）
+        - name: 编排模板基本语法说明-映射（Mappings）
           href: Operation-Guide/orchestration-templates/templates-grammar-Mappings.md
-        - name: 编排模板基本语法说明-参数（Conditions）
+        - name: 编排模板基本语法说明-条件（Conditions）
           href: Operation-Guide/orchestration-templates/templates-grammar-Conditions.md
-        - name: 编排模板基本语法说明-参数（Resources）
+        - name: 编排模板基本语法说明-函数（Functions）
+          href: Operation-Guide/orchestration-templates/templates-grammar-Functions.md
+        - name: 编排模板基本语法说明-伪参数（Pseudo Parameters）
+          href: Operation-Guide/orchestration-templates/templates-grammar-Pseudo.md       
+        - name: 编排模板基本语法说明-资源（Resources）
           href: Operation-Guide/orchestration-templates/templates-grammar-Resources.md
-        - name: 编排模板基本语法说明-参数（Outputs）
+        - name: 编排模板基本语法说明-输出（Outputs）
           href: Operation-Guide/orchestration-templates/templates-grammar-Outputs.md
        
        - name: 资源栈管理
@@ -74,8 +78,8 @@ items:
       href: Best-Practices/wordpress_with_single.md
     - name: 创建一个集群模式的WordPress应用
       href: Best-Practices/wordpress_with_cluster.md
-    - name: 创建一个Java Web开发测试环境
-      href: Best-Practices/Java_web_instance.md
+    - name: 创建一个Nodejs Web开发测试环境
+      href: Best-Practices/ Nodejs_instance.md
   - name: 教程
   items:
   status: 0
