@@ -31,7 +31,7 @@
 
 创建云主机过程中，如果需要使用云主机的Userdata功能，同时监控传入的Userdata脚本执行结果，用户可以使用资源编排提供的 JDCLOUD::ResourceOrchestration::WaitConditionHandle 和 JDCLOUD::ResourceOrchestration::WaitCondition。 详见 <[资源类型列表]()>
 
-##### 资源编排Userdata 脚本示例
+##### 资源编排Userdata Linux 脚本示例
 
 ```
      "Userdata": {
@@ -61,6 +61,41 @@
                 "Ref": "MyWaitConditionHandle"
               },
               " \n "
+            ]
+          ]
+        }
+      }
+
+```
+
+##### 资源编排Userdata Windows 脚本示例
+
+```
+     "Userdata": {
+        "Fn::Base64": {
+          "Fn::Join": [
+            "",
+            [
+               " <powershell> \n",
+               " $Region=\"",
+               {
+                "Ref": "JDCLOUD::Region"
+               },
+               "\"\n",
+               " $client = new-object System.Net.WebClient \n",
+               " $OSSAdress = \"http://jdro-userdata-$Region.s3.$Region.jcloudcs.com/signal.exe\" \n",
+               " $client.DownloadFile($OSSAdress, 'C:\\WINDOWS\\system32\\signal.exe') \n",
+
+               " $useraction = \"hello world\" \n",
+               " $useraction > C:\\jdro.txt \n",
+
+               " jdro-signal  ",
+               "       --success ",	" true ",
+               {
+                   "Ref":"MyWaitConditionHandle"
+               },
+               "  >> C:\\jdro.log \n ",
+               " </powershell> \n"
             ]
           ]
         }
