@@ -79,7 +79,7 @@ items:
     - name: 创建一个集群模式的WordPress应用
       href: Best-Practices/wordpress_with_cluster.md
     - name: 创建一个Nodejs Web开发测试环境
-      href: Best-Practices/ Nodejs_instance.md
+      href: Best-Practices/nodejs_web_instance.md
   - name: 教程
   items:
   status: 0
