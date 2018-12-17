@@ -23,3 +23,5 @@
 ![](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/update005.png)
 
 - *** 备注：资源栈更新需要一小段时间，最终的更新情况请到资源栈列表中查看。***
+- ***      云服务器userdata 不支持更新，当用户对该部分进行了修改， 资源栈的更新操作会忽略该修改。***
+
