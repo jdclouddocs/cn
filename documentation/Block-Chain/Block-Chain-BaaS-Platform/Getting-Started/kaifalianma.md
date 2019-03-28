@@ -28,6 +28,8 @@ type Chaincode interface {
 
 ## 链码实例
 
+```
+...
 func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface) pb.Response {
    var err error
    _, args := stub.GetFunctionAndParameters()
@@ -42,6 +44,9 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface) pb.Response {
    }
    return shim.Success(nil)
 }
+...
+```
+
 
 func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
    function, args := stub.GetFunctionAndParameters()
