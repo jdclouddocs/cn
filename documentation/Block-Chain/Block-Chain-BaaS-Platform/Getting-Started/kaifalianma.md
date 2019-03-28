@@ -7,6 +7,8 @@
 3.	安装配置IDE，建议使用GoLand。
 ## 链码API
   所有链码都需要实现Chaincode接口，接口声明如下所示。Peer节点在交易中调用链码接口方法，其中Init方法在链码实例化（instantiate）和升级（upgrade）交易中调用，以便链码执行必要的初始化操作。Invoke方法在调用（invoke）交易中使用，处理交易提案内容，修改或读取账本数据。
+  
+ ```
 // Chaincode interface must be implemented by all chaincodes. The fabric runs
    // the transactions by calling these functions as specified.
 type Chaincode interface {
@@ -19,6 +21,7 @@ type Chaincode interface {
    // transaction is committed.
    Invoke(stub ChaincodeStubInterface) pb.Response
 }
+```
 
 表-Chain code接口声明表
 
@@ -45,7 +48,7 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface) pb.Response {
 }
 ```
 
-
+```
 func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
    function, args := stub.GetFunctionAndParameters()
    switch function {
@@ -75,7 +78,9 @@ func (t *SimpleChaincode) invoke(stub shim.ChaincodeStubInterface, args []string
       return shim.Success(nil)
    }
 }
+```
 
+```
 func (t *SimpleChaincode) query(stub shim.ChaincodeStubInterface, args []string) pb.Response {
    if state, err := stub.GetState(Name); err != nil {
       return shim.Error("fail to read asset state")
@@ -85,6 +90,7 @@ func (t *SimpleChaincode) query(stub shim.ChaincodeStubInterface, args []string)
       return shim.Success(state)
    }
 }
+```
 
 func main() {
    err := shim.Start(new(SimpleChaincode))
