@@ -1,12 +1,14 @@
 # 开发链码
 链码可看作是超级账本中的智能合约，通常用来处理网络成员达成共识的业务逻辑，任何对账本数据的查询和修改都需要调用链码实现。超级账本链码本质上是实现接口规约的程序，当前开发语言支持Go语言。
+
 ## 开发环境
-  采用Go语言开发链码，需要准备如下开发环境：
+采用Go语言开发链码，需要准备如下开发环境：
 1.	安装配置Go，建议采用1.10.X以上版本；
 2.	GitHub上获取Hyper ledge Fabric 1.0.0源码并添加到GOPATH；
 3.	安装配置IDE，建议使用GoLand。
+
 ## 链码API
-  所有链码都需要实现Chaincode接口，接口声明如下所示。Peer节点在交易中调用链码接口方法，其中Init方法在链码实例化（instantiate）和升级（upgrade）交易中调用，以便链码执行必要的初始化操作。Invoke方法在调用（invoke）交易中使用，处理交易提案内容，修改或读取账本数据。
+所有链码都需要实现Chaincode接口，接口声明如下所示。Peer节点在交易中调用链码接口方法，其中Init方法在链码实例化（instantiate）和升级（upgrade）交易中调用，以便链码执行必要的初始化操作。Invoke方法在调用（invoke）交易中使用，处理交易提案内容，修改或读取账本数据。
   
  ```
 // Chaincode interface must be implemented by all chaincodes. The fabric runs
