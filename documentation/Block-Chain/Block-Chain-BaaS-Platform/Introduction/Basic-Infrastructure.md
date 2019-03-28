@@ -9,4 +9,4 @@ baas-jdcloud-adaptor：负责BaaS平台与JDCloud资源层交互，包括IaaS层
 
 baas-monitor：负责监控及搜集用户区块链网络的运行状态，并定时上报给JDCloud监控服务。
 
-![图片](https://static.oschina.net/uploads/user/1808/3617290_100.jpg)
+![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Introduction/Pic/TIM%E6%88%AA%E5%9B%BE20190328185458.png)
