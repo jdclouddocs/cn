@@ -5,4 +5,4 @@
 
 区块链网络管理：负责处理用户通过界面配置的创建区块链网络的请求。当区块链网络创建完成后，与区块链网络中的agent实时通信，转发用户通过管理console对区块链网络的操作，并返回操作结果。
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Introduction/Pic/TIM%E6%88%AA%E5%9B%BE20190328185458.png)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Introduction/Pic/TIM截图20190328185458.png)
